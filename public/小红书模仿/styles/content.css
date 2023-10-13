@@ -1,0 +1,117 @@
+.content-page-grid{
+  display:fixed;
+  margin-top: 80px;
+}
+
+.content-label{
+  padding-left: 200px;
+  padding-bottom: 20px;
+  height: 20px;
+}
+
+.label-button{
+  height:40px;
+  width:55px;
+  font-size: 15px;
+  color: rgb(120, 120, 120);
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.label-button:hover{
+  background-color: rgb(245, 245, 245);
+}
+
+.content-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 25px;
+  padding-left: 200px;
+  padding-top: 5px;
+}
+
+.content-preview{
+  max-width: 250px;
+}
+
+.title-grid{
+  margin-left:10px;
+}
+
+.title{
+  margin-top: 7px;
+  margin-bottom: 7px;
+  font-size: 14px;
+}
+
+.user-info-grid{
+  height:15px;
+  margin-left: 10px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-avatar-grid{
+  height:20px;
+  display:flex;
+  align-items: center;
+}
+
+.user-picture{
+  width: 20px;
+  border-radius: 10px;
+  margin-right: 3px;
+}
+
+.like-info-grid{
+  display:flex;
+  height:15px;
+  margin-left: 20px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.thumbnail{
+  max-width: 250px;
+  border-radius: 5px;
+}
+
+.thumbnail-row {
+  margin-bottom: 6px;
+}
+
+.like-icon{
+  width:15px;
+}
+
+.user-name,
+.like-counts{
+  font-size: 12px;
+  color: rgb(99, 99, 99);
+}
+
+.thumbnail,
+.title,
+.user-picture,
+.user-name,
+.like-icon,
+.like-counts{
+  cursor: pointer;
+}
+
+@media(min-width:1423px){
+  .content-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media(max-width:1191px){
+  .content-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
